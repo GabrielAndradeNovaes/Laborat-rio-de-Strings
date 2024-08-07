@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Manipulação de Texto</title>
+
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Manipulação de Texto</h1>
+    <textarea id="inputText" rows="10" cols="50" placeholder="Digite seu texto aqui..."></textarea>
+    <br>
+    <button onclick="analyzeText()">Analisar Texto</button>
+    <br><br>
+    
+    <div id="results"></div>
+    
+    <h2>Localizar e Substituir</h2>
+    <input type="text" id="searchWord" placeholder="Palavra a localizar">
+    <input type="text" id="replaceWord" placeholder="Palavra para substituir">
+    <button onclick="highlightWord()">Localizar</button>
+    <button onclick="replaceWord()">Substituir</button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
